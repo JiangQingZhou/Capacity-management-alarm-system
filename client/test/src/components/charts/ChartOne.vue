@@ -42,7 +42,7 @@
         data() {
             return {
                 value: '1',
-                period: '100',
+                period: '7',
                 model: 'cnn',
                 options: [
                     {
@@ -60,16 +60,16 @@
                 ],
                 periodOpt: [
                     {
-                        value: '100',
-                        label: '100',
+                        value: '7',
+                        label: '一周',
                     },
                     {
-                        value: '200',
-                        label: '200',
+                        value: '30',
+                        label: '一个月',
                     },
                     {
-                        value: '300',
-                        label: '300',
+                        value: '365',
+                        label: '一年',
                     }
                 ]
             }
@@ -130,6 +130,7 @@
                                     yAxisIndex: 'none'
                                 },
                                 dataView: {
+                                    readOnly: true,
                                     optionToContent: function (opt) {
                                         var axisData = opt.xAxis[0].data;
                                         var series = opt.series;
@@ -144,9 +145,9 @@
                                         }
                                         table += "</tbody></table>";
                                         return table;
-                                    }
+                                    },
                                 },
-                                magicType: { type: ['line', 'bar', 'stack'] },
+                                magicType: { type: ['line', 'bar'] },
                                 saveAsImage: {}
                             }
                         },

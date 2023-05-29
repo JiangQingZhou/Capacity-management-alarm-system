@@ -8,8 +8,8 @@
                             <el-icon><HomeFilled /></el-icon>
                             容量预测告警系统
                         </template>
-                        <el-menu-item index="/one"><el-icon><InfoFilled /></el-icon>第一题</el-menu-item>
-                        <el-menu-item index="/two"><el-icon><WarningFilled /></el-icon>第二题</el-menu-item>
+                        <el-menu-item index="/one"><el-icon><InfoFilled /></el-icon>容量管理预测</el-menu-item>
+                        <el-menu-item index="/two"><el-icon><WarningFilled /></el-icon>动态阈值告警</el-menu-item>
                     </el-sub-menu>
                 </el-menu>
             </el-aside>

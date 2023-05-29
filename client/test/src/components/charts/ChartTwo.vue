@@ -139,6 +139,7 @@
                                     yAxisIndex: 'none',
                                 },
                                 dataView: {
+                                    readOnly: true,
                                     optionToContent: function (opt) {
                                         var axisData = opt.xAxis[0].data;
                                         var series = opt.series;
@@ -155,7 +156,7 @@
                                         return table;
                                     }
                                 },
-                                magicType: { type: ['line', 'bar', 'stack'] },
+                                magicType: { type: ['line', 'bar'] },
                                 saveAsImage: {}
                             }
                         },
